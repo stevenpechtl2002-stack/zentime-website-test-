@@ -740,6 +740,14 @@
     card.addEventListener('mouseenter', () => gsap.to(card.querySelector('.sv-num'), { opacity:1, duration:.3 }));
     card.addEventListener('mouseleave', () => gsap.to(card.querySelector('.sv-num'), { opacity:.6, duration:.3 }));
   });
+
+  // ── MOBILE: Termin-Buttons → externe URL ──
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    document.querySelectorAll('a[href="#termin"]').forEach(a => {
+      a.href = 'https://zentime-website-test.vercel.app/#termin';
+      a.target = '_self';
+    });
+  }
 </script>
 </body>
 </html>
