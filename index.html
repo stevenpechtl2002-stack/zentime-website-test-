@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AutoProfi Werkstatt Pforzheim</title>
+  <title>KFZ Folierung Pforzheim – Professionelle Fahrzeugfolierung</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://08f2eb98-f2df-459c-93eb-d7da52f3e6d6.lovableproject.com/embed/widget.js" data-key="" data-label="Termin buchen" data-color="#e63946" defer></script>
   <style>
     :root {
       --red: #e63946;
@@ -66,7 +65,7 @@
     .hero { min-height: 100vh; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; }
     .hero-bg {
       position: absolute; inset: 0;
-      background: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1920&q=90') center/cover no-repeat;
+      background: url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1920&q=90') center/cover no-repeat;
       will-change: transform;
     }
     .hero-overlay {
@@ -75,7 +74,6 @@
         linear-gradient(to right, rgba(0,0,0,.85) 0%, rgba(0,0,0,.5) 60%, rgba(0,0,0,.2) 100%),
         linear-gradient(to top, rgba(0,0,0,.6) 0%, transparent 50%);
     }
-    /* noise texture */
     .hero-noise { position: absolute; inset: 0; opacity: .04; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-size: 200px; }
 
     .hero-inner { position: relative; z-index: 2; width: 100%; max-width: 1200px; padding: 0 5rem; padding-top: 90px; will-change: transform; }
@@ -147,7 +145,7 @@
     #vorteile { padding: 8rem 5rem; position: relative; overflow: hidden; }
     #vorteile .vorteile-bg {
       position: absolute; inset: 0;
-      background: url('https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=1800&q=85') center/cover no-repeat;
+      background: url('https://images.unsplash.com/photo-1614026480209-cd9934144671?w=1800&q=85') center/cover no-repeat;
       filter: brightness(.18) saturate(.6);
     }
     #vorteile::before { content:''; position:absolute; top:-200px; right:-200px; width:600px; height:600px; background:radial-gradient(circle, rgba(230,57,70,.18) 0%, transparent 65%); pointer-events:none; z-index:1; }
@@ -228,23 +226,6 @@
     .bw-btn::after { content:''; position:absolute; inset:0; background:linear-gradient(90deg,transparent,rgba(255,255,255,.1),transparent); transform:translateX(-100%); transition:transform .5s; }
     .bw-btn:hover { background: var(--red); transform: translateY(-2px); box-shadow: 0 12px 32px var(--red-glow); }
     .bw-btn:hover::after { transform: translateX(100%); }
-    .bw-hint { font-size: .8rem; color: var(--muted); }
-    .bw-hint strong { color: var(--text); }
-    .zentime-wrap {
-      width: 100%;
-      border-radius: 20px;
-      overflow: hidden;
-      border: 2px solid rgba(230,57,70,.18);
-      box-shadow: 0 16px 50px rgba(0,0,0,.09), 0 0 0 4px rgba(230,57,70,.04);
-      background: #fff;
-    }
-    .zentime-wrap iframe {
-      display: block;
-      width: 100%;
-      height: 720px;
-      border: none;
-      filter: hue-rotate(95deg) saturate(1.3);
-    }
 
     /* ══ REVIEWS ══ */
     #bewertungen { background: var(--bg); overflow: hidden; padding-left: 0; padding-right: 0; }
@@ -394,8 +375,8 @@
 <!-- NAV -->
 <nav id="nav">
   <a href="#start" class="logo">
-    <div class="logo-icon">🔧</div>
-    Auto<em>Profi</em>
+    <div class="logo-icon">🎨</div>
+    KFZ<em>Folie</em>
   </a>
   <ul class="nav-links">
     <li><a href="#leistungen">Leistungen</a></li>
@@ -433,33 +414,33 @@
   <div class="hero-inner" id="heroInner">
     <div class="hero-eyebrow">
       <div class="hero-eyebrow-line"></div>
-      <span>Zertifizierter Meisterbetrieb · Pforzheim</span>
+      <span>Professionelle Fahrzeugfolierung · Pforzheim</span>
     </div>
     <h1 class="hero-h1">
-      Ihr Auto in
-      <span class="line-red">besten Händen.</span>
+      Dein Auto.
+      <span class="line-red">Dein Style.</span>
     </h1>
-    <p class="hero-sub">Professionelle Kfz-Werkstatt mit über 25 Jahren Erfahrung. Schnell, zuverlässig und transparent – direkt in Pforzheim.</p>
+    <p class="hero-sub">Professionelle KFZ-Folierung für Vollfolierungen, Schutzfolien und Werbebeschriftungen. Präzise, langlebig und nach deinen Wünschen – direkt in Pforzheim.</p>
     <div class="hero-actions">
       <a href="#termin" class="btn-red">Termin buchen →</a>
       <a href="#leistungen" class="btn-outline-white">Leistungen ansehen</a>
     </div>
     <div class="hero-stats">
       <div class="hstat">
-        <div class="hstat-n"><span class="counter" data-target="25">0</span><span class="red">+</span></div>
+        <div class="hstat-n"><span class="counter" data-target="10">0</span><span class="red">+</span></div>
         <div class="hstat-l">Jahre Erfahrung</div>
       </div>
       <div class="hstat">
-        <div class="hstat-n"><span class="counter" data-target="8000">0</span><span class="red">+</span></div>
-        <div class="hstat-l">Zufriedene Kunden</div>
+        <div class="hstat-n"><span class="counter" data-target="2500">0</span><span class="red">+</span></div>
+        <div class="hstat-l">Foliierte Fahrzeuge</div>
       </div>
       <div class="hstat">
-        <div class="hstat-n">4.9<span class="red">★</span></div>
+        <div class="hstat-n">5.0<span class="red">★</span></div>
         <div class="hstat-l">Google Bewertung</div>
       </div>
       <div class="hstat">
         <div class="hstat-n">100<span class="red">%</span></div>
-        <div class="hstat-l">Transparenz</div>
+        <div class="hstat-l">Maßarbeit</div>
       </div>
     </div>
   </div>
@@ -472,26 +453,26 @@
 <!-- TICKER -->
 <div class="ticker">
   <div class="ticker-track">
-    <span>Reifenwechsel</span><span class="dot">✦</span>
-    <span>TÜV Vorbereitung</span><span class="dot">✦</span>
-    <span>Inspektion</span><span class="dot">✦</span>
-    <span>Klimaservice</span><span class="dot">✦</span>
-    <span>Karosserie</span><span class="dot">✦</span>
-    <span>Bremsen</span><span class="dot">✦</span>
-    <span>Fahrzeugdiagnose</span><span class="dot">✦</span>
-    <span>Scheckheftpflege</span><span class="dot">✦</span>
-    <span>Ölwechsel</span><span class="dot">✦</span>
-    <span>Elektrik</span><span class="dot">✦</span>
-    <span>Reifenwechsel</span><span class="dot">✦</span>
-    <span>TÜV Vorbereitung</span><span class="dot">✦</span>
-    <span>Inspektion</span><span class="dot">✦</span>
-    <span>Klimaservice</span><span class="dot">✦</span>
-    <span>Karosserie</span><span class="dot">✦</span>
-    <span>Bremsen</span><span class="dot">✦</span>
-    <span>Fahrzeugdiagnose</span><span class="dot">✦</span>
-    <span>Scheckheftpflege</span><span class="dot">✦</span>
-    <span>Ölwechsel</span><span class="dot">✦</span>
-    <span>Elektrik</span><span class="dot">✦</span>
+    <span>Vollfolierung</span><span class="dot">✦</span>
+    <span>Teilfolierung</span><span class="dot">✦</span>
+    <span>Schutzfolie PPF</span><span class="dot">✦</span>
+    <span>Werbebeschriftung</span><span class="dot">✦</span>
+    <span>Farbwechsel</span><span class="dot">✦</span>
+    <span>Matt-Folierung</span><span class="dot">✦</span>
+    <span>Chrom-Folierung</span><span class="dot">✦</span>
+    <span>Lackschutzfolie</span><span class="dot">✦</span>
+    <span>Carbon-Optik</span><span class="dot">✦</span>
+    <span>Dachfolierung</span><span class="dot">✦</span>
+    <span>Vollfolierung</span><span class="dot">✦</span>
+    <span>Teilfolierung</span><span class="dot">✦</span>
+    <span>Schutzfolie PPF</span><span class="dot">✦</span>
+    <span>Werbebeschriftung</span><span class="dot">✦</span>
+    <span>Farbwechsel</span><span class="dot">✦</span>
+    <span>Matt-Folierung</span><span class="dot">✦</span>
+    <span>Chrom-Folierung</span><span class="dot">✦</span>
+    <span>Lackschutzfolie</span><span class="dot">✦</span>
+    <span>Carbon-Optik</span><span class="dot">✦</span>
+    <span>Dachfolierung</span><span class="dot">✦</span>
   </div>
 </div>
 
@@ -503,15 +484,15 @@
         <div class="s-eyebrow"><div class="s-eyebrow-line"></div><span class="s-label">Was wir anbieten</span></div>
         <h2 class="s-title">Unsere <em>Leistungen</em></h2>
       </div>
-      <p>Vom einfachen Ölwechsel bis zur komplexen Motorrevision – wir kümmern uns um alles rund um Ihr Fahrzeug. Alle Marken, alle Modelle.</p>
+      <p>Von der Vollfolierung bis zur Schutzfolie – wir verwandeln dein Fahrzeug. Alle Marken, alle Modelle, jeder Wunsch.</p>
     </div>
     <div class="services-grid">
-      <div class="sv-card"><div class="sv-card-bg"></div><div class="sv-num">01</div><span class="sv-icon">🔧</span><h3>Allgemeine Reparaturen</h3><p>Motor, Getriebe, Fahrwerk – fachgerecht und termingerecht für alle Fahrzeugtypen.</p><div class="sv-price">Ab 59 € / Std.</div><div class="sv-arrow">→</div></div>
-      <div class="sv-card"><div class="sv-card-bg"></div><div class="sv-num">02</div><span class="sv-icon">🛢️</span><h3>Inspektion & Ölwechsel</h3><p>Herstellerkonforme Wartung und Scheckheftpflege – oft noch am selben Tag fertig.</p><div class="sv-price">Ab 89 €</div><div class="sv-arrow">→</div></div>
-      <div class="sv-card"><div class="sv-card-bg"></div><div class="sv-num">03</div><span class="sv-icon">🔍</span><h3>TÜV / HU Vorbereitung</h3><p>Vollständiger Vorab-Check. Mängel beheben bevor der Prüfer kommt – auf Anhieb bestehen.</p><div class="sv-price">Ab 49 €</div><div class="sv-arrow">→</div></div>
-      <div class="sv-card"><div class="sv-card-bg"></div><div class="sv-num">04</div><span class="sv-icon">❄️</span><h3>Klimaanlage Service</h3><p>Befüllung, Dichtigkeitsprüfung und Desinfektion für angenehmes Fahrerlebnis.</p><div class="sv-price">Ab 69 €</div><div class="sv-arrow">→</div></div>
-      <div class="sv-card"><div class="sv-card-bg"></div><div class="sv-num">05</div><span class="sv-icon">⚡</span><h3>Elektrik & Diagnose</h3><p>OBD-Diagnose, Batteriewechsel, Lichtanlage – alle elektrischen Systeme aus einer Hand.</p><div class="sv-price">Ab 39 €</div><div class="sv-arrow">→</div></div>
-      <div class="sv-card"><div class="sv-card-bg"></div><div class="sv-num">06</div><span class="sv-icon">🚗</span><h3>Karosserie & Lack</h3><p>Beulen, Kratzer, Unfallschäden – professionelle Instandsetzung mit perfekter Lackanpassung.</p><div class="sv-price">Auf Anfrage</div><div class="sv-arrow">→</div></div>
+      <div class="sv-card"><div class="sv-card-bg"></div><div class="sv-num">01</div><span class="sv-icon">🎨</span><h3>Vollfolierung</h3><p>Kompletter Farbwechsel deines Fahrzeugs in jeder gewünschten Farbe und Finish – matt, glänzend oder satin.</p><div class="sv-price">Ab 1.800 €</div><div class="sv-arrow">→</div></div>
+      <div class="sv-card"><div class="sv-card-bg"></div><div class="sv-num">02</div><span class="sv-icon">✂️</span><h3>Teilfolierung</h3><p>Dach, Spiegel, Motorhaube oder Stoßstangen gezielt in einem anderen Farbton oder Design gestalten.</p><div class="sv-price">Ab 199 €</div><div class="sv-arrow">→</div></div>
+      <div class="sv-card"><div class="sv-card-bg"></div><div class="sv-num">03</div><span class="sv-icon">🛡️</span><h3>Lackschutzfolie PPF</h3><p>Transparente Hochleistungsfolie schützt deinen Lack dauerhaft vor Steinschlag, Kratzern und Umwelteinflüssen.</p><div class="sv-price">Ab 299 €</div><div class="sv-arrow">→</div></div>
+      <div class="sv-card"><div class="sv-card-bg"></div><div class="sv-num">04</div><span class="sv-icon">🏢</span><h3>Werbebeschriftung</h3><p>Professionelle Fahrzeugbeschriftung für Firmenfahrzeuge – individuell, auffällig und wetterfest.</p><div class="sv-price">Auf Anfrage</div><div class="sv-arrow">→</div></div>
+      <div class="sv-card"><div class="sv-card-bg"></div><div class="sv-num">05</div><span class="sv-icon">🌑</span><h3>Carbon & Spezialfolien</h3><p>Carbon-Optik, Chrom, Holzdekor oder individuelle Prints – für den besonderen Auftritt auf der Straße.</p><div class="sv-price">Ab 149 €</div><div class="sv-arrow">→</div></div>
+      <div class="sv-card"><div class="sv-card-bg"></div><div class="sv-num">06</div><span class="sv-icon">🚗</span><h3>Folienentfernung</h3><p>Professionelle und rückstandslose Entfernung alter Folierungen – schonend für den Originallack.</p><div class="sv-price">Ab 299 €</div><div class="sv-arrow">→</div></div>
     </div>
   </div>
 </section>
@@ -522,17 +503,17 @@
   <div class="container">
     <div class="vorteile-grid">
       <div class="vorteile-left">
-        <div class="s-eyebrow"><div class="s-eyebrow-line"></div><span class="s-label">Warum AutoProfi</span></div>
+        <div class="s-eyebrow"><div class="s-eyebrow-line"></div><span class="s-label">Warum KFZ Folie</span></div>
         <h2 class="s-title">Qualität die <em>überzeugt</em></h2>
-        <p>Wir sind mehr als eine Werkstatt – wir sind Ihr Partner. Vertrauen, Ehrlichkeit und Top-Qualität sind keine Versprechen, sondern gelebte Werte seit 1998.</p>
-        <div class="vorteile-big-num">26</div>
+        <p>Wir sind mehr als ein Folierungsbetrieb – wir machen dein Fahrzeug zum Unikat. Präzision, Premium-Materialien und Leidenschaft für Details seit über 10 Jahren.</p>
+        <div class="vorteile-big-num">10</div>
       </div>
       <div class="vorteile-items">
-        <div class="v-item"><div class="v-icon">🏆</div><div><h4>Zertifizierter Meisterbetrieb</h4><p>Alle Arbeiten werden von ausgebildeten Kfz-Meistern durchgeführt und geprüft.</p></div></div>
-        <div class="v-item"><div class="v-icon">💰</div><div><h4>Faire & transparente Preise</h4><p>Kostenloser Kostenvoranschlag, keine versteckten Gebühren. Was wir sagen, das gilt.</p></div></div>
-        <div class="v-item"><div class="v-icon">⚡</div><div><h4>Express-Service verfügbar</h4><p>Viele Leistungen noch am gleichen Tag. Expresstermine auf Anfrage buchbar.</p></div></div>
-        <div class="v-item"><div class="v-icon">🚘</div><div><h4>Hol- & Bringservice</h4><p>Wir kommen zu Ihnen – abholen, reparieren, zurückbringen. Voller Komfort.</p></div></div>
-        <div class="v-item"><div class="v-icon">🔒</div><div><h4>Garantie auf alle Arbeiten</h4><p>12 Monate Garantie auf alle durchgeführten Reparaturen. Ihr Vertrauen ist unser Kapital.</p></div></div>
+        <div class="v-item"><div class="v-icon">🏆</div><div><h4>Zertifizierter Fachbetrieb</h4><p>Alle Folierungen werden von ausgebildeten Fachkräften mit Erfahrung aus über 2.500 Projekten durchgeführt.</p></div></div>
+        <div class="v-item"><div class="v-icon">🎨</div><div><h4>Premium-Folienmaterialien</h4><p>Wir verwenden ausschließlich Markenfolien von 3M, ORACAL und Avery Dennison – für maximale Langlebigkeit.</p></div></div>
+        <div class="v-item"><div class="v-icon">⚡</div><div><h4>Express-Service verfügbar</h4><p>Viele Folierungen in 1–3 Tagen fertig. Leihauto auf Anfrage. Damit du nicht lange auf dein Auto verzichten musst.</p></div></div>
+        <div class="v-item"><div class="v-icon">🔄</div><div><h4>Reversibel & lackschonend</h4><p>Folien lassen sich rückstandslos entfernen – der Originallack bleibt perfekt erhalten.</p></div></div>
+        <div class="v-item"><div class="v-icon">🔒</div><div><h4>Garantie auf alle Arbeiten</h4><p>2 Jahre Garantie auf alle Folierungen. Blasen, Ablösungen oder Fehler beheben wir kostenlos.</p></div></div>
       </div>
     </div>
   </div>
@@ -543,21 +524,21 @@
   <div class="container">
     <div class="about-grid">
       <div class="about-imgs">
-        <img class="about-img1" src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800&q=85" alt="Werkstatt" />
-        <img class="about-img2" src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=500&q=85" alt="Werkzeug" />
-        <div class="about-badge-float"><strong>26</strong><span>Jahre Erfahrung</span></div>
+        <img class="about-img1" src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&q=85" alt="Fahrzeugfolierung" />
+        <img class="about-img2" src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=500&q=85" alt="Sportauto" />
+        <div class="about-badge-float"><strong>10</strong><span>Jahre Erfahrung</span></div>
       </div>
       <div class="about-text">
         <div class="s-eyebrow"><div class="s-eyebrow-line"></div><span class="s-label">Über uns</span></div>
-        <h2 class="s-title">Handwerk mit<br><em>Leidenschaft</em></h2>
-        <p>Seit 1998 sind wir Ihr verlässlicher Partner in Pforzheim. Was als kleine Zwei-Mann-Werkstatt begann, ist heute ein moderner Meisterbetrieb mit 12 erfahrenen Fachkräften.</p>
-        <p>Wir arbeiten mit den neuesten Diagnosegeräten und verwenden ausschließlich Originalteile oder gleichwertige Qualitätsersatzteile. Transparenz steht bei uns an erster Stelle – keine versteckten Kosten, klare Kommunikation.</p>
+        <h2 class="s-title">Folierung mit<br><em>Leidenschaft</em></h2>
+        <p>Seit über 10 Jahren sind wir dein Spezialist für Fahrzeugfolierung in Pforzheim. Was als Ein-Mann-Betrieb begann, ist heute ein eingespieltes Team aus leidenschaftlichen Folier-Experten.</p>
+        <p>Wir arbeiten mit den besten Materialien vom Markt und verlegen jede Folie mit höchster Sorgfalt und Präzision. Kein Blasen, keine Falten – nur perfekte Ergebnisse, auf die wir stolz sind.</p>
         <div class="about-checks">
           <div class="about-check"><div class="check-icon">✓</div>Alle Fahrzeugmarken und -modelle</div>
-          <div class="about-check"><div class="check-icon">✓</div>Moderne OBD-Diagnose & Prüfgeräte</div>
-          <div class="about-check"><div class="check-icon">✓</div>Kostenloser Kostenvoranschlag</div>
-          <div class="about-check"><div class="check-icon">✓</div>Hol- und Bringservice auf Anfrage</div>
-          <div class="about-check"><div class="check-icon">✓</div>Scheckheftpflege ohne Händlergebühren</div>
+          <div class="about-check"><div class="check-icon">✓</div>Premium-Folien von 3M, ORACAL & Avery</div>
+          <div class="about-check"><div class="check-icon">✓</div>Kostenlose Beratung & Farbmuster</div>
+          <div class="about-check"><div class="check-icon">✓</div>Leihauto auf Anfrage verfügbar</div>
+          <div class="about-check"><div class="check-icon">✓</div>2 Jahre Garantie auf alle Folierungen</div>
         </div>
       </div>
     </div>
@@ -570,15 +551,15 @@
     <div class="gallery-head">
       <div>
         <div class="s-eyebrow"><div class="s-eyebrow-line"></div><span class="s-label">Einblicke</span></div>
-        <h2 class="s-title">Unsere <em>Werkstatt</em></h2>
+        <h2 class="s-title">Unsere <em>Arbeiten</em></h2>
       </div>
     </div>
     <div class="gallery-grid">
-      <div class="g-img span2"><img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=900&q=85" alt="Mechaniker bei der Arbeit" /></div>
-      <div class="g-img"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=85" alt="Fahrzeug" /></div>
-      <div class="g-img"><img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&q=85" alt="Werkzeug" /></div>
-      <div class="g-img"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=85" alt="Motor" /></div>
-      <div class="g-img"><img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=600&q=85" alt="Werkstatt Innen" /></div>
+      <div class="g-img span2"><img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=900&q=85" alt="Fahrzeugfolierung" /></div>
+      <div class="g-img"><img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&q=85" alt="Sportwagen" /></div>
+      <div class="g-img"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=85" alt="Auto" /></div>
+      <div class="g-img"><img src="https://images.unsplash.com/photo-1614026480209-cd9934144671?w=600&q=85" alt="Folie Detail" /></div>
+      <div class="g-img"><img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600&q=85" alt="Fahrzeug" /></div>
     </div>
   </div>
 </section>
@@ -590,23 +571,26 @@
       <div class="booking-left">
         <div class="s-eyebrow"><div class="s-eyebrow-line"></div><span class="s-label">Terminbuchung</span></div>
         <h2 class="s-title">Termin <em>online</em> buchen</h2>
-        <p>Wählen Sie einfach einen freien Slot. Wir bestätigen Ihren Termin innerhalb von 2 Stunden per E-Mail oder Telefon.</p>
+        <p>Wähle einen freien Termin für deine Beratung oder Folierung. Wir melden uns innerhalb von 2 Stunden zur Bestätigung.</p>
         <div class="c-items">
           <div class="c-item"><div class="c-ico">📞</div><div><div class="c-lbl">Telefon</div><div class="c-val">07231 / 45 67 890</div></div></div>
-          <div class="c-item"><div class="c-ico">✉️</div><div><div class="c-lbl">E-Mail</div><div class="c-val">info@autoprofi-pforzheim.de</div></div></div>
-          <div class="c-item"><div class="c-ico">📍</div><div><div class="c-lbl">Adresse</div><div class="c-val">Drosselweg 11, 75175 Pforzheim</div></div></div>
-          <div class="c-item"><div class="c-ico">🚨</div><div><div class="c-lbl">Notfall-Hotline 24/7</div><div class="c-val">0176 / 123 456 78</div></div></div>
+          <div class="c-item"><div class="c-ico">✉️</div><div><div class="c-lbl">E-Mail</div><div class="c-val">info@kfz-folie-pforzheim.de</div></div></div>
+          <div class="c-item"><div class="c-ico">📍</div><div><div class="c-lbl">Adresse</div><div class="c-val">Musterstraße 1, 75175 Pforzheim</div></div></div>
+          <div class="c-item"><div class="c-ico">⏰</div><div><div class="c-lbl">Beratung</div><div class="c-val">Kostenlos & unverbindlich</div></div></div>
         </div>
       </div>
-      <div id="termin-widget" class="zentime-wrap">
-        <iframe
-          src="https://www.zentime.io/embed/kalender/13a0a8ef-6ac3-40ca-88a3-c3168a8e7b14"
-          width="100%"
-          height="720"
-          frameborder="0"
-          loading="lazy"
-          title="Termin buchen – AutoProfi Pforzheim"
-        ></iframe>
+      <div class="booking-widget-box">
+        <div class="bwb-glow"></div>
+        <div class="bwb-icon">🎨</div>
+        <h3>Jetzt Termin buchen</h3>
+        <p>Kostenlose Beratung, Farbmuster und ein persönliches Angebot – alles in einem Termin.</p>
+        <div class="bw-steps">
+          <div class="bw-step"><span>1</span>Fahrzeug & Wunschfolie auswählen</div>
+          <div class="bw-step"><span>2</span>Termin & Kontakt angeben</div>
+          <div class="bw-step"><span>3</span>Bestätigung per E-Mail / Telefon</div>
+        </div>
+        <a href="tel:072314567890" class="bw-btn">Jetzt anrufen & Termin buchen</a>
+        <p class="bw-hint">Oder schreib uns: <strong>info@kfz-folie-pforzheim.de</strong></p>
       </div>
     </div>
   </div>
@@ -620,43 +604,43 @@
       <h2 class="s-title">Was unsere <em>Kunden</em> sagen</h2>
     </div>
     <div class="rev-score">
-      <div class="rev-big">4.9</div>
-      <div><div class="rev-stars">★★★★★</div><div class="rev-count">312 Google-Bewertungen</div></div>
+      <div class="rev-big">5.0</div>
+      <div><div class="rev-stars">★★★★★</div><div class="rev-count">187 Google-Bewertungen</div></div>
     </div>
   </div>
   <div class="reviews-carousel">
     <div class="rev-track-wrap">
       <div class="rev-track">
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Super Werkstatt! Schnelle Reparatur, faire Preise und sehr freundliche Mitarbeiter. Mein BMW läuft wieder einwandfrei!</p><div class="r-person"><div class="r-av">TK</div><div><strong>Thomas K.</strong><span>BMW 3er · Bremsenwechsel</span></div></div></div>
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Endlich eine Werkstatt, der ich vertrauen kann! Transparente Kommunikation, kein versteckter Aufpreis. TÜV bestanden!</p><div class="r-person"><div class="r-av">SM</div><div><strong>Sandra M.</strong><span>VW Golf · HU Vorbereitung</span></div></div></div>
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Hol- und Bringservice war ein Lebensretter. Auto morgens abgeholt, nachmittags zurück. Top Service!</p><div class="r-person"><div class="r-av">JB</div><div><strong>Jonas B.</strong><span>Audi A4 · Inspektion</span></div></div></div>
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Sehr kompetentes Team, ehrliche Beratung und keine unnötigen Zusatzkosten. Komme immer wieder gerne!</p><div class="r-person"><div class="r-av">MR</div><div><strong>Maria R.</strong><span>Mercedes C · Ölwechsel</span></div></div></div>
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Klimaanlage in 2 Stunden repariert, Preis war fair. Absolute Empfehlung für Pforzheim und Umgebung!</p><div class="r-person"><div class="r-av">FK</div><div><strong>Felix K.</strong><span>Toyota · Klimaservice</span></div></div></div>
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Karosserieschaden nach Unfall perfekt repariert. Man sieht nichts mehr, Farbe passt 100%. Klasse!</p><div class="r-person"><div class="r-av">AW</div><div><strong>Anna W.</strong><span>Opel Astra · Karosserie</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Mein BMW wurde matt schwarz foliert – absolut perfekte Arbeit! Keine Blasen, keine Falten. Sieht aus wie ab Werk, nur viel geiler.</p><div class="r-person"><div class="r-av">TK</div><div><strong>Thomas K.</strong><span>BMW M3 · Vollfolierung matt schwarz</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Dachfolierung in Carbon-Optik für meinen Golf. Schnell, sauber und zu einem fairen Preis. Absolut empfehlenswert!</p><div class="r-person"><div class="r-av">SM</div><div><strong>Sandra M.</strong><span>VW Golf · Dachfolierung Carbon</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">PPF-Schutzfolie auf die komplette Front – super Qualität und professionelle Beratung. Mein Lack ist jetzt perfekt geschützt.</p><div class="r-person"><div class="r-av">JB</div><div><strong>Jonas B.</strong><span>Audi RS6 · PPF Frontschutz</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Firmenwagen beschriftet – pünktlich fertig, sehr saubere Arbeit und super freundliches Team. Komme definitiv wieder!</p><div class="r-person"><div class="r-av">MR</div><div><strong>Maria R.</strong><span>Transporter · Werbebeschriftung</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Vollfolierung in Satin Grau – mein Porsche ist jetzt ein echter Hingucker. Die Qualität ist einfach unschlagbar.</p><div class="r-person"><div class="r-av">FK</div><div><strong>Felix K.</strong><span>Porsche 911 · Vollfolierung satin</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Alte Folierung komplett und rückstandslos entfernt, neuer Lack perfekt erhalten. Sehr kompetentes Team!</p><div class="r-person"><div class="r-av">AW</div><div><strong>Anna W.</strong><span>Mercedes · Folienentfernung</span></div></div></div>
         <!-- duplicate -->
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Super Werkstatt! Schnelle Reparatur, faire Preise und sehr freundliche Mitarbeiter. Mein BMW läuft wieder einwandfrei!</p><div class="r-person"><div class="r-av">TK</div><div><strong>Thomas K.</strong><span>BMW 3er · Bremsenwechsel</span></div></div></div>
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Endlich eine Werkstatt, der ich vertrauen kann! Transparente Kommunikation, kein versteckter Aufpreis. TÜV bestanden!</p><div class="r-person"><div class="r-av">SM</div><div><strong>Sandra M.</strong><span>VW Golf · HU Vorbereitung</span></div></div></div>
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Hol- und Bringservice war ein Lebensretter. Auto morgens abgeholt, nachmittags zurück. Top Service!</p><div class="r-person"><div class="r-av">JB</div><div><strong>Jonas B.</strong><span>Audi A4 · Inspektion</span></div></div></div>
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Sehr kompetentes Team, ehrliche Beratung und keine unnötigen Zusatzkosten. Komme immer wieder gerne!</p><div class="r-person"><div class="r-av">MR</div><div><strong>Maria R.</strong><span>Mercedes C · Ölwechsel</span></div></div></div>
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Klimaanlage in 2 Stunden repariert, Preis war fair. Absolute Empfehlung für Pforzheim und Umgebung!</p><div class="r-person"><div class="r-av">FK</div><div><strong>Felix K.</strong><span>Toyota · Klimaservice</span></div></div></div>
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Karosserieschaden nach Unfall perfekt repariert. Man sieht nichts mehr, Farbe passt 100%. Klasse!</p><div class="r-person"><div class="r-av">AW</div><div><strong>Anna W.</strong><span>Opel Astra · Karosserie</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Mein BMW wurde matt schwarz foliert – absolut perfekte Arbeit! Keine Blasen, keine Falten. Sieht aus wie ab Werk, nur viel geiler.</p><div class="r-person"><div class="r-av">TK</div><div><strong>Thomas K.</strong><span>BMW M3 · Vollfolierung matt schwarz</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Dachfolierung in Carbon-Optik für meinen Golf. Schnell, sauber und zu einem fairen Preis. Absolut empfehlenswert!</p><div class="r-person"><div class="r-av">SM</div><div><strong>Sandra M.</strong><span>VW Golf · Dachfolierung Carbon</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">PPF-Schutzfolie auf die komplette Front – super Qualität und professionelle Beratung. Mein Lack ist jetzt perfekt geschützt.</p><div class="r-person"><div class="r-av">JB</div><div><strong>Jonas B.</strong><span>Audi RS6 · PPF Frontschutz</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Firmenwagen beschriftet – pünktlich fertig, sehr saubere Arbeit und super freundliches Team. Komme definitiv wieder!</p><div class="r-person"><div class="r-av">MR</div><div><strong>Maria R.</strong><span>Transporter · Werbebeschriftung</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Vollfolierung in Satin Grau – mein Porsche ist jetzt ein echter Hingucker. Die Qualität ist einfach unschlagbar.</p><div class="r-person"><div class="r-av">FK</div><div><strong>Felix K.</strong><span>Porsche 911 · Vollfolierung satin</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Alte Folierung komplett und rückstandslos entfernt, neuer Lack perfekt erhalten. Sehr kompetentes Team!</p><div class="r-person"><div class="r-av">AW</div><div><strong>Anna W.</strong><span>Mercedes · Folienentfernung</span></div></div></div>
       </div>
     </div>
     <div class="rev-track-wrap">
       <div class="rev-track rev-r">
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Reifenwechsel super schnell, kein langer Termin nötig. Nettes Personal und absolut faire Preise.</p><div class="r-person"><div class="r-av">PH</div><div><strong>Peter H.</strong><span>Ford Focus · Reifenwechsel</span></div></div></div>
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Elektrikproblem das andere nicht lösen konnten – hier in 1 Stunde behoben! Unglaublich kompetent.</p><div class="r-person"><div class="r-av">LM</div><div><strong>Laura M.</strong><span>Hyundai · Elektrik</span></div></div></div>
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Kostenvoranschlag exakt eingehalten, keine bösen Überraschungen. So muss das sein! Danke AutoProfi.</p><div class="r-person"><div class="r-av">BN</div><div><strong>Bernd N.</strong><span>Kia · Inspektion</span></div></div></div>
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Scheckheftpflege günstiger als beim Händler und gleiche Qualität. Nie wieder woanders!</p><div class="r-person"><div class="r-av">CS</div><div><strong>Christine S.</strong><span>VW Passat · Scheckheft</span></div></div></div>
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Notfall am Freitagabend – trotzdem noch geholfen! Das nenne ich echten Kundenservice. 5 Sterne!</p><div class="r-person"><div class="r-av">DL</div><div><strong>Daniel L.</strong><span>Audi Q5 · Notfall</span></div></div></div>
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Freundliche Atmosphäre, sauberer Wartebereich. Fühlt sich an wie beim Profi von nebenan.</p><div class="r-person"><div class="r-av">KF</div><div><strong>Katrin F.</strong><span>BMW X1 · TÜV</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Teilfolierung Motorhaube und Spiegel in Gloss Black – schaut hammer aus! Preis war fair, Termin schnell verfügbar.</p><div class="r-person"><div class="r-av">PH</div><div><strong>Peter H.</strong><span>Ford Mustang · Teilfolierung</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Hatte noch nie so eine saubere Folienverlegung gesehen. Kein einziger Lufteinschluss. Einfach perfekt!</p><div class="r-person"><div class="r-av">LM</div><div><strong>Laura M.</strong><span>Audi TT · Vollfolierung weiß</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Kostenvoranschlag exakt eingehalten, super freundliche Beratung. Werde jeden empfehlen der sein Auto folieren lassen will!</p><div class="r-person"><div class="r-av">BN</div><div><strong>Bernd N.</strong><span>BMW X5 · PPF Vollschutz</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Firmenflotte mit 4 Fahrzeugen beschriftet – alle pünktlich, alle perfekt. Absoluter Profi-Betrieb!</p><div class="r-person"><div class="r-av">CS</div><div><strong>Christine S.</strong><span>Firmenflotte · Werbebeschriftung</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Spontantermin bekommen, Dachfolie noch am selben Tag verlegt. Unglaublich schnell und trotzdem perfektes Ergebnis!</p><div class="r-person"><div class="r-av">DL</div><div><strong>Daniel L.</strong><span>VW Golf R · Dachfolierung</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Tolle Atmosphäre, saubere Werkstatt. Das Team nimmt sich Zeit für Beratung und erklärt alles genau. Sehr vertrauenswürdig!</p><div class="r-person"><div class="r-av">KF</div><div><strong>Katrin F.</strong><span>Mini Cooper · Vollfolierung</span></div></div></div>
         <!-- duplicate -->
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Reifenwechsel super schnell, kein langer Termin nötig. Nettes Personal und absolut faire Preise.</p><div class="r-person"><div class="r-av">PH</div><div><strong>Peter H.</strong><span>Ford Focus · Reifenwechsel</span></div></div></div>
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Elektrikproblem das andere nicht lösen konnten – hier in 1 Stunde behoben! Unglaublich kompetent.</p><div class="r-person"><div class="r-av">LM</div><div><strong>Laura M.</strong><span>Hyundai · Elektrik</span></div></div></div>
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Kostenvoranschlag exakt eingehalten, keine bösen Überraschungen. So muss das sein! Danke AutoProfi.</p><div class="r-person"><div class="r-av">BN</div><div><strong>Bernd N.</strong><span>Kia · Inspektion</span></div></div></div>
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Scheckheftpflege günstiger als beim Händler und gleiche Qualität. Nie wieder woanders!</p><div class="r-person"><div class="r-av">CS</div><div><strong>Christine S.</strong><span>VW Passat · Scheckheft</span></div></div></div>
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Notfall am Freitagabend – trotzdem noch geholfen! Das nenne ich echten Kundenservice. 5 Sterne!</p><div class="r-person"><div class="r-av">DL</div><div><strong>Daniel L.</strong><span>Audi Q5 · Notfall</span></div></div></div>
-        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Freundliche Atmosphäre, sauberer Wartebereich. Fühlt sich an wie beim Profi von nebenan.</p><div class="r-person"><div class="r-av">KF</div><div><strong>Katrin F.</strong><span>BMW X1 · TÜV</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Teilfolierung Motorhaube und Spiegel in Gloss Black – schaut hammer aus! Preis war fair, Termin schnell verfügbar.</p><div class="r-person"><div class="r-av">PH</div><div><strong>Peter H.</strong><span>Ford Mustang · Teilfolierung</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Hatte noch nie so eine saubere Folienverlegung gesehen. Kein einziger Lufteinschluss. Einfach perfekt!</p><div class="r-person"><div class="r-av">LM</div><div><strong>Laura M.</strong><span>Audi TT · Vollfolierung weiß</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Kostenvoranschlag exakt eingehalten, super freundliche Beratung. Werde jeden empfehlen der sein Auto folieren lassen will!</p><div class="r-person"><div class="r-av">BN</div><div><strong>Bernd N.</strong><span>BMW X5 · PPF Vollschutz</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Firmenflotte mit 4 Fahrzeugen beschriftet – alle pünktlich, alle perfekt. Absoluter Profi-Betrieb!</p><div class="r-person"><div class="r-av">CS</div><div><strong>Christine S.</strong><span>Firmenflotte · Werbebeschriftung</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Spontantermin bekommen, Dachfolie noch am selben Tag verlegt. Unglaublich schnell und trotzdem perfektes Ergebnis!</p><div class="r-person"><div class="r-av">DL</div><div><strong>Daniel L.</strong><span>VW Golf R · Dachfolierung</span></div></div></div>
+        <div class="r-card"><div class="r-stars">★★★★★</div><p class="r-text">Tolle Atmosphäre, saubere Werkstatt. Das Team nimmt sich Zeit für Beratung und erklärt alles genau. Sehr vertrauenswürdig!</p><div class="r-person"><div class="r-av">KF</div><div><strong>Katrin F.</strong><span>Mini Cooper · Vollfolierung</span></div></div></div>
       </div>
     </div>
   </div>
@@ -670,26 +654,26 @@
         <div class="s-eyebrow"><div class="s-eyebrow-line"></div><span class="s-label">Öffnungszeiten & Standort</span></div>
         <h2 class="s-title">Wann sind<br><em>wir da?</em></h2>
         <table class="hours" id="hoursTable">
-          <tr><td>Montag</td><td>07:30 – 18:00 Uhr</td></tr>
-          <tr><td>Dienstag</td><td>07:30 – 18:00 Uhr</td></tr>
-          <tr><td>Mittwoch</td><td>07:30 – 18:00 Uhr</td></tr>
-          <tr><td>Donnerstag</td><td>07:30 – 18:00 Uhr</td></tr>
-          <tr><td>Freitag</td><td>07:30 – 17:00 Uhr</td></tr>
-          <tr><td>Samstag</td><td>08:00 – 13:00 Uhr</td></tr>
+          <tr><td>Montag</td><td>08:00 – 18:00 Uhr</td></tr>
+          <tr><td>Dienstag</td><td>08:00 – 18:00 Uhr</td></tr>
+          <tr><td>Mittwoch</td><td>08:00 – 18:00 Uhr</td></tr>
+          <tr><td>Donnerstag</td><td>08:00 – 18:00 Uhr</td></tr>
+          <tr><td>Freitag</td><td>08:00 – 17:00 Uhr</td></tr>
+          <tr><td>Samstag</td><td>09:00 – 14:00 Uhr</td></tr>
           <tr><td>Sonntag</td><td class="closed-d">Geschlossen</td></tr>
         </table>
         <div class="hotline-card">
-          <div class="hico">🚨</div>
-          <div><strong>Notfall-Hotline 24/7</strong><span>0176 / 123 456 78 – immer erreichbar</span></div>
+          <div class="hico">📞</div>
+          <div><strong>Beratungshotline</strong><span>07231 / 45 67 890 – Mo–Sa erreichbar</span></div>
         </div>
       </div>
       <div>
         <div class="map-wrap">
-          <iframe src="https://maps.google.com/maps?q=Drosselweg+11,+75175+Pforzheim,+Germany&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="AutoProfi Standort"></iframe>
+          <iframe src="https://maps.google.com/maps?q=Pforzheim,+Germany&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="KFZ Folie Standort"></iframe>
         </div>
         <div class="map-btns">
-          <a href="https://maps.google.com/maps?q=Drosselweg+11,+75175+Pforzheim" target="_blank" class="btn-red">In Google Maps öffnen</a>
-          <a href="https://maps.google.com/maps/dir//Drosselweg+11,+75175+Pforzheim" target="_blank" class="btn-outline-dark">Route planen</a>
+          <a href="https://maps.google.com/maps?q=Pforzheim" target="_blank" class="btn-red">In Google Maps öffnen</a>
+          <a href="https://maps.google.com/maps/dir//Pforzheim" target="_blank" class="btn-outline-dark">Route planen</a>
         </div>
       </div>
     </div>
@@ -701,20 +685,20 @@
   <div class="container">
     <div class="footer-top">
       <div class="f-brand">
-        <a href="#start" class="logo"><div class="logo-icon">🔧</div>Auto<em>Profi</em></a>
-        <p>Ihr zertifizierter Kfz-Meisterbetrieb in Pforzheim. Qualität und Vertrauen seit 1998.</p>
+        <a href="#start" class="logo"><div class="logo-icon">🎨</div>KFZ<em>Folie</em></a>
+        <p>Dein Spezialist für professionelle Fahrzeugfolierung in Pforzheim. Präzision und Leidenschaft seit über 10 Jahren.</p>
         <div class="f-brand-badges">
-          <span class="f-badge">TÜV Partner</span>
-          <span class="f-badge">Meisterbetrieb</span>
+          <span class="f-badge">3M Partner</span>
+          <span class="f-badge">ORACAL zertifiziert</span>
           <span class="f-badge">Alle Marken</span>
         </div>
       </div>
-      <div class="f-col"><h4>Leistungen</h4><ul><li><a href="#leistungen">Reparaturen</a></li><li><a href="#leistungen">Inspektion</a></li><li><a href="#leistungen">TÜV Vorbereitung</a></li><li><a href="#leistungen">Klimaservice</a></li><li><a href="#leistungen">Elektrik</a></li></ul></div>
+      <div class="f-col"><h4>Leistungen</h4><ul><li><a href="#leistungen">Vollfolierung</a></li><li><a href="#leistungen">Teilfolierung</a></li><li><a href="#leistungen">PPF Schutzfolie</a></li><li><a href="#leistungen">Werbebeschriftung</a></li><li><a href="#leistungen">Carbon & Spezial</a></li></ul></div>
       <div class="f-col"><h4>Unternehmen</h4><ul><li><a href="#ueber-uns">Über uns</a></li><li><a href="#vorteile">Warum wir</a></li><li><a href="#bewertungen">Bewertungen</a></li><li><a href="#standort">Standort</a></li><li><a href="#termin">Termin buchen</a></li></ul></div>
-      <div class="f-col"><h4>Kontakt</h4><ul><li><a href="tel:072314567890">07231 / 45 67 890</a></li><li><a href="mailto:info@autoprofi-pforzheim.de">info@autoprofi-pforzheim.de</a></li><li><a href="#">Drosselweg 11</a></li><li><a href="#">75175 Pforzheim</a></li></ul></div>
+      <div class="f-col"><h4>Kontakt</h4><ul><li><a href="tel:072314567890">07231 / 45 67 890</a></li><li><a href="mailto:info@kfz-folie-pforzheim.de">info@kfz-folie-pforzheim.de</a></li><li><a href="#">Musterstraße 1</a></li><li><a href="#">75175 Pforzheim</a></li></ul></div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 AutoProfi Werkstatt Pforzheim GmbH</span>
+      <span>© 2026 KFZ Folierung Pforzheim</span>
       <div style="display:flex;gap:1.5rem;">
         <a href="#">Impressum</a>
         <a href="#">Datenschutz</a>
@@ -823,14 +807,6 @@
   });
   navOverlay.addEventListener('click', closeDrawer);
   document.querySelectorAll('.drawer-link').forEach(l => l.addEventListener('click', closeDrawer));
-
-  // ── MOBILE: Termin-Buttons → externe URL ──
-  if (window.matchMedia('(max-width: 768px)').matches) {
-    document.querySelectorAll('a[href="#termin"]').forEach(a => {
-      a.href = 'https://zentime-website-test.vercel.app/#termin-widget';
-      a.target = '_self';
-    });
-  }
 </script>
 </body>
 </html>
